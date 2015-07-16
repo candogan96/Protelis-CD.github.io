@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Protelis.GitHub.io by Protelis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Protelis.GitHub.io</h1>
+      <h2 class="project-tagline">Protelis web page</h2>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="protelis" class="anchor" href="#protelis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Protelis</h1>
+
+<p><em>Practical aggregate programming, hosted in Java</em></p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul>
+<li>
+<a href="#why">Why Protelis</a>
+
+<ul>
+<li><a href="#reading">Further reading / references</a></li>
+</ul>
+</li>
+<li><a href="#developing">Developing with Protelis</a></li>
+<li>
+<a href="#contributing">Contributing to Protelis</a>
+
+<ul>
+<li><a href="#buildstatus">Current build status of Protelis</a></li>
+</ul>
+</li>
+<li><a href="#history">History and Trivia</a></li>
+</ul>
+
+<h2>
+<a id="why-protelis" class="anchor" href="#why-protelis" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="why"></a>Why Protelis</h2>
+
+<p>Developing networked systems is really hard.
+To make a good resilient system, you generally need to bring three types of expertise to bear all at once in the same code:</p>
+
+<ul>
+<li>Expertise regarding the actual purpose of the system</li>
+<li>Networking expertise, to manage the interactions between individual devices</li>
+<li>Distributed algorithms expertise, to ensure that the collective behavior is desirable and resilient to all sorts of failures and system changes</li>
+</ul>
+
+<p>This "aggregate programming" problem, of obtaining resilient collective behavior from local interactions between machines, has been with us ever since people started networking computers.
+In some specialized areas, such as cloud computing and GPU programming, there a simple and regular network architecture has already led to good aggregate programming methods (e.g., <a href="https://en.wikipedia.org/wiki/MapReduce">MapReduce</a>).</p>
+
+<p>The goal of the Protelis language is to make resilient networked systems just as easy to build for complex and heterogeneous networks as for single machines and cloud systems.
+This accomplished by separating the different tasks and making some of the hard and subtle parts automatic and implicit.
+A few of the key design decisions behind Protelis are:</p>
+
+<ul>
+<li>Protelis is a language because there are a lot of subtle and easy ways to break a distributed system.  Creating a language (rather than just a library) lets some of these be handled implicitly, so there is no opportunity to make mistakes.</li>
+<li>Protelis is hosted in and integrated with Java to let it be very lightweight take advantage of the large pre-existing ecosystem of Java infrastructure and libraries.</li>
+<li>Protelis looks as much like Java as practical in order to make it easier to learn and adopt.</li>
+<li>Protelis ensures safe and resilient composition because its core is <em>field calculus</em>, a theoretical model of aggregate programming much like <a href="https://en.wikipedia.org/wiki/Lambda_calculus">lambda calculus</a> is for functional programming.</li>
+</ul>
+
+<h3>
+<a id="further-reading--references" class="anchor" href="#further-reading--references" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="reading"></a>Further reading / references:</h3>
+
+<ul>
+<li>
+<a href="http://jakebeal.com/Publications/SAC2015-Protelis.pdf">Protelis: Practical Aggregate Programming</a>,
+Danilo Pianini, Mirko Viroli, Jacob Beal, ACM Symposium on Applied Computing 2015, April 2015.
+<br><em>The first scientific paper presenting Protelis and example applications</em>
+</li>
+<li>
+<strong>Distributed Recovery for Enterprise Services</strong>
+Shane S. Clark, Jacob Beal, Partha Pal, 9th IEEE International Conference on Self-Adaptive and Self-Organizing Systems, to appear September 2015.
+<br><em>Protelis applied to fast, low-impact automated recovery of enterprise systems</em>
+</li>
+<li>
+<a href="http://jakebeal.com/Publications/FOCLASA13-FieldCalculus.pdf">A Calculus of Computational Fields</a>, 
+Mirko Viroli, Ferruccio Damiani, and Jacob Beal, 12th International Workshop on Foundations of Coordination Languages and Self Adaptive Systems (FOCLASA'13), September 2013.
+<br><em>Field calculus is the mathematical/theoretical foundation of Protelis</em>
+</li>
+<li>
+<a href="http://openmap.bbn.com/%7Ejbeal/Publications/FORTE15-HigherOrderFieldCalculus.pdf">Code Mobility Meets Self-Organisation: a Higher-order Calculus of Computational Fields</a>, 
+Ferruccio Damiani, Mirko Viroli, Danilo Pianini, and Jacob Beal, Formal Techniques for Distributed Objects, Components, and Systems, pp. 113-128, June 2015.
+<br><em>Higher-order field calculus lets Protelis have first-class functions</em>
+</li>
+<li>
+<a href="http://rsta.royalsocietypublishing.org/content/373/2046/20140220">Space-time Programming</a>, Jacob Beal and Mirko Viroli, Philosophical Transactions of the Royal Society A, Volume 373, Issue 2046, pages 20140220, June 2015.
+<br><em>Larger picture of field calculus and general approach to aggregate programming, with a focus on spatially-distributed systems</em>
+</li>
+<li>
+<a href="http://arxiv.org/abs/1202.5509">Organizing the Aggregate: Languages for Spatial Computing</a>
+Jacob Beal, Stefan Dulman, Kyle Usbeck, Mirko Viroli, and Nikolaus Correll, chapter in "Formal and Practical Aspects of Domain-Specific Languages: Recent Developments", ed. Marjan Mernik, IGI Global, December 2012.
+<br><em>A survey of other aggregate programming approaches, with a focus on spatially-distributed networks</em>
+</li>
+</ul>
+
+<h2>
+<a id="developing-with-protelis" class="anchor" href="#developing-with-protelis" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="developing"></a>Developing with Protelis</h2>
+
+<h2>
+<a id="contributing-to-protelis" class="anchor" href="#contributing-to-protelis" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="contributing"></a>Contributing to Protelis</h2>
+
+<p>Protelis is a free and open project that welcomes additional contributions.</p>
+
+<p>If you want to help improve Protelis, just dive in, fork a copy of this code, and get started!
+Development customs follow a standard GitHub workflow: get things working in your own branch, then request pull integration.
+The file README.developer contains information about setting up development and contributing.</p>
+
+<h3>
+<a id="current-build-status-of-protelis" class="anchor" href="#current-build-status-of-protelis" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="buildstatus"></a>Current build status of Protelis:</h3>
+
+<p><a href="https://drone.io/github.com/Protelis/Protelis/latest"><img src="https://drone.io/github.com/Protelis/Protelis/status.png" alt="Build Status"></a></p>
+
+<ul>
+<li><a href="https://drone.io/github.com/Protelis/Protelis/files/build/reports/tests/index.html">Test details</a></li>
+<li><a href="https://drone.io/github.com/Protelis/Protelis/files/build/reports/findbugs/main.html">FindBugs reporting</a></li>
+<li><a href="https://drone.io/github.com/Protelis/Protelis/files/build/reports/reports.tar">All build reports</a></li>
+</ul>
+
+<h2>
+<a id="history-and-trivia" class="anchor" href="#history-and-trivia" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="history"></a>History and Trivia</h2>
+
+<p>Protelis emerged from the synthesis of several prior projects:</p>
+
+<ul>
+<li>
+<a href="http://mitproto.net">Proto</a>, an aggregate programming language created by <a href="http://jakebeal.com">Jacob Beal</a> and <a href="http://www.eecs.berkeley.edu/%7Ejrb/">Jonathan Bachrach</a>.</li>
+<li>
+<a href="http://jakebeal.com/Publications/FOCLASA13-FieldCalculus.pdf">Field calculus</a>, a distillation of aggregate programming models by <a href="http://www.apice.unibo.it/xwiki/bin/view/MirkoViroli/">Mirko Viroli</a>, <a href="http://www.di.unito.it/%7Edamiani/">Ferruccio Damiani</a>, and <a href="http://jakebeal.com">Jacob Beal</a>
+</li>
+<li>The <a href="http://www.apice.unibo.it/xwiki/bin/view/Alchemist/">Alchemist Simulator</a> project, led by <a href="http://www.danilopianini.org/">Danilo Pianini</a> and <a href="http://www.apice.unibo.it/xwiki/bin/view/MirkoViroli/">Mirko Viroli</a>.</li>
+</ul>
+
+<p>The first version of Protelis was designed jointly during the summer of 2014 by Jacob Beal, Danilo Pianini, and Mirko Viroli, with the first implementation carried out primarily by Danilo Pianini.</p>
+
+<p>The name "Protelis," a Latin word which trnanslates approximately as "regarding a team," was chosen to reflect both its nature as an aggregate language and its derivation from Proto.</p>
+
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-65258912-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
+
