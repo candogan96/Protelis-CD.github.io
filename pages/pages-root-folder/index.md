@@ -24,14 +24,27 @@ widget3:
   text: 'Jake, please fill this in :) <br/> you must use a valid HTML string here.'
 permalink: /index.html
 ---
- <center>
-  <img src="images/raytheon.png"></img>
-
-  <img src="images/unibo-seal.png"></img>
-
-  <img src="images/darpa.png"></img>
-  <p>Protelis is a joint effort of University of Bologna and Raytheon BBN Technologies, supported by DARPA.</p>
- </center>
+<center>
+<table>
+  <tr>
+    <th>
+      <center>
+        <img src="images/unibo-seal.png"></img>
+      </center>
+    </th>
+    <td>
+      <center>
+        <img src="images/raytheon.png"></img>
+      </center>
+      <br/>
+      <center>
+        <img src="images/darpa.png"></img>
+      </center>
+    </td>
+  </tr>
+</table>
+<p>Protelis is a joint effort of University of Bologna and Raytheon BBN Technologies, supported by DARPA.</p>
+</center>
 
 
 A video would make sense here I believe. Suggested width of the iframe: 1000 px.
