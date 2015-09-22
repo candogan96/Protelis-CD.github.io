@@ -13,12 +13,12 @@ widget1:
   image: screenshot1.png
   text: 'Jake, please fill this in :) <br/> you must use a valid HTML string here.'
 widget2:
-  title: "Why Alchemist?"
+  title: "Why Protelis?"
   url: '/work-in-progress.html'
   text: 'Jake, please fill this in :) <br/> you must use a valid HTML string here.'
   image: crowd01.png
 widget3:
-  title: "Use Alchemist"
+  title: "Use Protelis"
   url: '/work-in-progress.html'
   image: screenshot3.png
   text: 'Jake, please fill this in :) <br/> you must use a valid HTML string here.'
