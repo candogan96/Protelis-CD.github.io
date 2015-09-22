@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: page
 title: "Work in progress"
 meta_title: "This page is not ready yet"
 subheadline: "We are not at this point yet"
@@ -8,7 +8,7 @@ permalink: "/work-in-progress.html"
 #categories:
 #    - design
 header:
-   image_fullwidth: "header_mol.png"
+   image_fullwidth: "header_grad.png"
 ---
 
 ![Imagine there is a funny image here, for some reason I cannot find it.]({{ site.url }}/images/chemistry_reactions.png)
