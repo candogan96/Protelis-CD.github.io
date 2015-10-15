@@ -1,0 +1,131 @@
+- title: Start
+  url: "/"
+  side: left
+
+- title: "Get Protelis"
+  url: "/"
+  side: left
+  dropdown:
+    - title: "Stable releases"
+      url: "http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.protelis%22%20AND%20a%3A%22protelis%22"
+    - title: Latest Nightly builds
+      url: "http://hephaestus.apice.unibo.it/protelis-build/protelis/build/libs/"
+    - title: Maven artifacts
+      url: "http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.protelis%22"
+
+#- title: "Tutorial"
+#  url: "/pages/tutorial/"
+#  side: left
+#  dropdown:
+#    - title: "Understand Alchemist"
+#      url: "/pages/tutorial/basics/"
+#    - title: "Graphical Interface"
+#      url: "/pages/tutorial/swingui/"
+#    - title: "Protelis"
+#      url: "/pages/tutorial/protelis/"
+      # e.g. OutOfMemory
+#    - title: "Troubleshooting"
+#      url: "/pages/tutorial/troubleshoot/"
+
+#- title: "Developers"
+#  url: "/tutorial/"
+#  side: left
+#  dropdown:
+#    - title: "Javadoc"
+#      url: "/javadoc/"
+
+- title: "About"
+  url: "/"
+  side: left
+  dropdown:
+    - title: "License"
+      url: "/license"
+#    - title: "Modules"
+#      url: "/work-in-progress.html"
+
+#- title: "Graphical interface"
+#  url: "/work-in-progress.html"
+#  side: left
+#  dropdown:
+#    - title: "Tutorial"
+#      url: "/work-in-progress.html"
+#    - title: "The effect stack"
+#      url: "/work-in-progress.html"
+#    - title: "Extract data from simulations"
+#      url: "/work-in-progress.html"
+
+#- title: "Command line"
+#  url: "/work-in-progress.html"
+#  side: left
+
+#- title: "Templates"
+#  url: "/design/"
+#  side: left
+#  dropdown:
+#  - title: "Grid & Colors"
+#    url: "/design/grid/"
+#  - title: "Typography"
+#    url: "/design/typography/"
+#  - title: "Page/Post"
+#    url: "/design/page/"
+#  - title: "Post-Left-Sidebar"
+#    url: "/design/post-left-sidebar/"
+#  - title: "Post-Right-Sidebar"
+#    url: "/design/post-right-sidebar/"
+#  - title: "Page Full-Width"
+#    url: "/design/page-fullwidth/"
+#  - title: "Blog-Page"
+#    url: "/blog/"
+#  - title: "Video"
+#    url: "/design/video/"
+#  - title: "Gallery"
+#    url: "/design/gallery/"
+#  - title: "Portfolio"
+#    url: "/design/portfolio/"
+
+#- title: "Header Styles"
+#  url: "/headers/"
+#  side: left
+#  dropdown:
+#  - title: "Header with Full-Width-Image"
+#    url: "/design/header-full-width-image/"
+#  - title: "Header with Image and Pattern"
+#    url: "/design/header-image-pattern/"
+#  - title: "Header with image and color"
+#    url: "/design/header-image-color/"
+#  - title: "Header Only With Logo"
+#    url: "/design/header-logo-only/"
+#  - title: "Header With Text"
+#    url: "/design/header-with-text/"
+#  - title: "No Header"
+#    url: "/design/no-header/"
+#  - title: "No Header but Image"
+#    url: "/design/no-header-but-image/"
+
+#- title: Documentation
+#  url: "/documentation/"
+#  side: left
+#  dropdown:
+#  - title: "Changelog"
+#    url: "/changelog/"
+#  - title: "Roadmap"
+#    url: "/roadmap/"
+
+#- title: Blog
+#  url: "/blog/"
+#  side: left
+#  dropdown:
+#  - title: "Blog Archive"
+#    url: "/blog/archive/"
+
+#- title: "REMOVE ME"
+#  url: "/getting-started/"
+#  side: right
+
+- title: "Search"
+  url: "/search/"
+  side: right
+
+#- title: "Contact"
+#  url: "/contact/"
+#  side: right

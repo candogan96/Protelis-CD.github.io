@@ -1,0 +1,13 @@
+- menu_name: "Supported by"
+
+- name: "University of Bologna"
+  url: "http://www.unibo.it/"
+
+- name: "APICe lab"
+  url: "http://apice.unibo.it/"
+
+- name: "Raytheon BBN Technologies"
+  url: "http://www.raytheon.com/ourcompany/bbn/"
+
+- name: "DARPA"
+  url: "http://www.darpa.mil/"
