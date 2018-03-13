@@ -1,2 +1,2 @@
-# protelis.github.io
+# Protelis.github.io
 Practical aggregate programming, hosted in Java
