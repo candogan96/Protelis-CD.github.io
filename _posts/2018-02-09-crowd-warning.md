@@ -37,12 +37,15 @@ The function <code>crowdWarning</code> alerts individuals who are near dangerous
 <code>}</code>
 </pre>
 
-![map with green, yellow, and red dots](/images/marathon.png)
+<img src="/images/marathon.png" alt="map with green, yellow, and red dots" width="500">
 
-In this simulation of the 2013 Vienna marathon, dots represent devices running the crowd safety service. Red dots are devices in locations with potentially dangerous crowd density and yellow dots are devices providing crowd density warnings.
+In this simulation of the 2013 Vienna Marathon, dots represent devices running the crowd safety service. Red dots are devices in locations with potentially dangerous crowd density and yellow dots are devices providing crowd density warnings.
 
-![map with blue, yellow, and red dots](/images/crowd-management.jpg)
+<img src="/images/crowd-management.jpg" alt="map with blue, yellow, and red dots" width="500">
 
 In this simulation of public events near the Boston waterfront, dots represent devices running the crowd safety service. Red dots are devices in locations with potentially dangerous crowd density and yellow dots are devices providing crowd density warnings.
+
+This is an accelerated video showing a crowd dispersal application using the Alchemist simulator. Each black dot is a handheld device, following real movement traces from the 2013 Vienna City Marathon. Red dots are devices warned as being in dangerously crowded areas, and yellow dots are devices warned that they are nearing a dangerously crowded area. Blue dots represent people who follow the crowd dispersal application's advice. More information about the application, its implementation, and its evaluation are available <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7789466">here. 
+<video src="/images/mapehd-small-h264.mp4" width="320" height="200" controls preload></video>
 
 For more information, see <a href="http://web.mit.edu/jakebeal/www/Publications/QUANTICOL16-AggregateProgramming.pdf">Aggregate Programming: From Foundations to Applications</a>, Jacob Beal, Mirko Viroli, In: Bernardo M., De Nicola R., Hillston J. (eds) Formal Methods for the Quantitative Evaluation of Collective Adaptive Systems. SFM 2016. Lecture Notes in Computer Science, vol 9700. Springer, Cham
