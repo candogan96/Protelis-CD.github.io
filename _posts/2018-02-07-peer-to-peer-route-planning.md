@@ -1,5 +1,5 @@
 ---
-title: Peer-to-peer route planning
+title: Peer-to-peer route planning and distribution of software updates
 layout: default
 ---
 When two people want to meet up at a large event, they may be hampered when a pre-arranged rendezvous point turns out to be inconvenient, while any centralized services for real-time coordination are overwhelmed by demand. Peer-to-peer calculations between participating devices could guide the two friends to meet at an intermediate location, regardless of the continued movement of the two friends and participating devices in the area.
@@ -43,20 +43,25 @@ The <code>rendezvous</code> function uses the descend function to identify the p
 <code>}</code>
 </pre>
 
-![map with blue dots](/images/peer-to-peer-1.png)
+<img src="/images/peer-to-peer-1.png" alt="map with blue dots" width="500">
 
 Imagine an initial configuration where a number of individuals carrying participating devices (blue dots) are attending a large event, and two of them (Alice and Bob, as two yellow squares) wish to meet up.
 
-![map with blue and a few red dots](/images/peer-to-peer-2.png)
+<img src="/images/peer-to-peer-2.png" alt="map with blue and a few red dots" width="500">
 
 Alice and Bob activate their rendezvous application, and nearby devices that are on the shortest path between them start to be selected as part of their rendezvous path (red dots).
 
-![map with blue and more red dots](/images/peer-to-peer-3.png)
+<img src="/images/peer-to-peer-3.png" alt="map with blue and more red dots" width="500">
 
 No central information service is needed for peer-to-peer calculation of the shortest path.
 
-![map with blue and even more red dots](/images/peer-to-peer-4.png)
+<img src="/images/peer-to-peer-4.png" alt="map with blue and even more red dots" width="500">
 
 The complete path is calculated, and will update automatically as Alice and Bob walk toward each other, and as intermediate devices move around.
 
 For more information, see <a href="http://jakebeal.com/Publications/SAC2015-Protelis.pdf">Protelis: Practical Aggregate Programming</a>, Danilo Pianini, Mirko Viroli, Jacob Beal, ACM Symposium on Applied Computing 2015, April 2015.
+
+In addition to peer-to-peer calculations, Protelis applications can take advantage of peer-to-peer communications to distribute software updates. This is an accelerate video of an Alchemist simulation of an upgradable crowd tracking applications. Each block dot represents a device with the Protelis process scheduler installed, but with no specific crowd tracking application running. Blue dots represent randomly selected devices injected with the crowd tracking application, which spreads through the aggregate scheduler to nearby devices. The red shadow shows detection of overcrowding by this version of the crowd tracker, which is judged to be too conservative. An updated version of the crowd tracker with a corrected overcrowding detection algorithm is then injected and spread through the aggregate scheduler, and the red shadow shrinks as the better danger estimation scheme takes over.
+<video src="/images/mapehd-small-h264.mp4" width="320" height="200" controls preload></video>
+
+For more information, see this <a href="https://link.springer.com/chapter/10.1007/978-3-319-03260-3_18">paper</a>.
