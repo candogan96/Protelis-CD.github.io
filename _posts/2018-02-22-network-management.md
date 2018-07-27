@@ -1,6 +1,6 @@
 ---
 title: Network services management
-layout: default
+layout: page
 permalink: network-management
 ---
 A common problem in managing enterprise services is a failure in one or more services can cause the overall system to get wedged, due to many dependences between different services and server. After such a failure cascade, the network can only become fully functional by restarting the servers and services in the correct order. Network services management can coordinate the order of shutdown and restarts.
@@ -9,13 +9,13 @@ Using Protelis and the principles of aggregate programming, it is straightforwar
 
 <b>Code samples and illustrations from a simulation:</b>
 
-![diagram of seven servers with service dependency arrows](/images/dependent-services-network.png)
+![diagram of seven servers with service dependency arrows](images/dependent-services-network.png)
 
 This example scenario features an enterprise network for a small company, with dependencies between two key databases and the internal and external servers running web applications. The scenario was implemented on a network of EmuLab servers, with the services emulated as simple query-response networking programs in Java that entered a "hung" state either by being externally triggered to crash or after their queries began to consistently fail.
 
 Each service was wrapped with an embedded Protelis execution engine, which was interfaced with the services by a small piece of monitoring glue code that inserted environment variables containing an indentifier for the <code>serviceID</code> running on that server, a tuple of identifier for <code>dependencies</code>, and the current <code>managedServiceStatus</code> of <code>stop</code>, <code>starting</code>, <code>run</code>, <code>stopping</code>, or <code>hung</code>. The glue code also provided <code>stopService</code> and <code>startService</code> methods to send signals to the service, track interactions between the services in order to maintain the set of neighbors for Protelis, and allowed an external monitoring applications to attach and receive status reports.
 
-![diagram of seven servers with blue, red, and green status for run, hung, and stop](/images/restart.png)
+![diagram of seven servers with blue, red, and green status for run, hung, and stop](images/restart.png)
 
 In this screenshot of the emulated network of services on machines, we see that the supplies database has crashed, triggering a graceful shutdown cascade of dependent services. Upon restart of the supplies database, the rest of the services would automatically restart in the correct order, if each service was running the following Protelis network management code.
 
