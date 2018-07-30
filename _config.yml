@@ -5,7 +5,7 @@ description: >
   The Protelis Programming Language
   for Aggregate Computing.
 
-baseurl: "/Protelis-CD.github.io" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://candogan96.github.io/Protelis-CD.github.io/ # the base hostname & protocol for your site
 git_address: https://github.com/candogan96/Protelis-CD.github.io
 git_edit_address: https://github.com/candogan96/Protelis-CD.github.io/blob/gh-pages
