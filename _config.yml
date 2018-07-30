@@ -1,9 +1,9 @@
 # Site settings
-title: The Protelis Programming Language
+title: Protelis
 email: danilo.pianini@unibo.it
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  The Protelis Programming Language
+  for Aggregate Computing.
 
 baseurl: "/Protelis-CD.github.io" # the subpath of your site, e.g. /blog/
 url: https://candogan96.github.io/Protelis-CD.github.io/ # the base hostname & protocol for your site
