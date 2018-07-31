@@ -14,6 +14,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li {% if page.sectionid=='faq' %} class="active" {% endif %}><a href="{{ "/faq" | prepend: site.baseurl }}">FAQ</a></li>
+                <li {% if page.sectionid=='learn' %} class="active" {% endif %}><a href="{{ "/learn" | prepend: site.baseurl }}">Learn</a></li>
                 <li {% if page.sectionid=='demos' %} class="active" {% endif %}><a href="{{ "/demos" | prepend: site.baseurl }}">Demos</a></li>
                 <li {% if page.sectionid=='developers' %} class="active" {% endif %}><a href="{{ site.git_address }}">Developers</a></li>
                 <li {% if page.sectionid=='references' %} class="active" {% endif %}><a href="{{ "/references" | prepend: site.baseurl }}">References</a></li>
