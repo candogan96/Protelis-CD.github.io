@@ -29,7 +29,7 @@ Communication is dealt with by the `NetworkManager`
 * `void shareState(Map<CodePath,Object> toSend)`
   * You are in charge of finding a way to send your neighbors the `toSend` payload...
 * `Map<DeviceUID,Map<CodePath,Object>> getNeighborState()`
-  * ...and of presenting the payloads sent to others to the current device.
+  * ...and of presenting the payloads sent from others to the current device.
 
 #### Run
 
@@ -41,7 +41,7 @@ final ExecutionContext ctx = new MyExecutionContext(netmgr, ...);
 final ProtelisProgram prog = ProtelisLoader.parse(myProgram)
 final ProtelisVM vm = new ProtelisVM(prog, ctx);
 while (alive) {
-vm.runCycle();
-Thread.sleep(someTime);
+  vm.runCycle();
+  Thread.sleep(someTime);
 }
 ```
